@@ -35,9 +35,9 @@ export const createUser = async (
   res: Response
 ): Promise<Response> => {
   try {
-    const { name, email } = req.body;
+    const { name, email, senha } = req.body;
     const response: QueryResult = await pool.query(
-      `INSERT INTO users (name, email) VALUES ('${name}', '${email}')`
+      `INSERT INTO users (name, email, senha) VALUES ('${name}', '${email}', MD5(${senha}))`
     );
     console.log(response.rows);
     return res.status(200).json("Criado com sucesso!");
