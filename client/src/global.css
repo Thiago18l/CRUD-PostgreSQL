@@ -2,7 +2,10 @@
 
 
 body {
+    display: flex;
+    -ms-flex-align: center;
     background: #f9f9f9;
-	margin: 0px;
+    margin: 0px;
+    align-items: center;
 }
 h1, h2, h3, h4, h5, h6, p, body, input{font-family: 'Roboto', sans-serif;  color: #141414;}

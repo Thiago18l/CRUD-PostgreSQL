@@ -11,36 +11,47 @@
 .form-signin{
     display: flex;
     flex-direction: column;
-    max-width: 350px;
-    padding: 50px;
-    margin: auto;
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 3px 3px 0px #d2cfcf;
-    border: 1px solid #efefef;
-}
-
-.form-signin .form-control {
-    border-width: 1;
-    border: 1px solid #d4d4d7;
-    padding: 15px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    border-radius: 2px;
-}
-
-.form-signin .button-login {
-
-    transition: box-shadow 0.3s ease-in-out;
-    margin-top: 5px;
     width: 100%;
-    background: #0060fa;
-    color: white;
-    border: none;
-    padding: 12px;
-    border-radius: 5px;
+    max-width: 350px;
+    padding: 15px;
+    margin: auto;
+}
+.form-signin h1, h2{
+    margin: 2px auto;
     font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-size: 14px;
+    cursor: pointer;
+    color: #2f2f2faa;
+    transition: 0.5s;
+}
+.form-signin h2 {
+    color: #2f2f2faa;
+}
+.form-signin h2:hover{
+    color: #2f2f2f44;
+}
+.form-signin h1:hover{
+    color: #2f2f2f44;
+}
+.form-signin .form-control {
+    padding: 10px;
+    margin-top: 2px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    font-size: 16px;
+}
+.form-signin .button-login {
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: .3rem;
+    color: #fff;
+    background-color: #007bff;
+    border: 1px solid transparent;
+    margin-top: 20px;
+    transition: 0.2s;
+}
+.form-signin .button-login:hover {
+    background-color: #0271e7;
 }
